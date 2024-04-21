@@ -1,5 +1,5 @@
-import type { MetaFunction } from "@remix-run/node";
-import { bikcraft, introducao } from "public/assets/img";
+import { MetaFunction } from "@remix-run/node";
+import { bikcraft, introducao } from "assets/img";
 import { useEffect } from "react";
 
 export const meta: MetaFunction = () => {
@@ -16,28 +16,6 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <header className="header-bg">
-        <div className="container header">
-          <a href="./">
-            {" "}
-            <img src={bikcraft} alt="Bikcraft" />
-          </a>
-          <nav aria-label="primaria">
-            <ul className="header-menu font-1-m">
-              <li>
-                <a href="./bicicletas.html">Bicicletas</a>
-              </li>
-              <li>
-                <a href="./bicicletas.html">Seguros</a>
-              </li>
-              <li>
-                <a href="./bicicletas.html">Contato</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
       <main className="introducao-bg">
         <div className="container introducao">
           <div className="introducao-conteudo">
@@ -246,62 +224,6 @@ export default function Index() {
           </div>
         </div>
       </article>
-
-      <footer className="footer-bg">
-        <div className="footer container">
-          <img src="./assets/img/bikcraft.svg" alt="logo Bikecraft" />
-
-          <div className="footer-contato">
-            <h3 className="font-2-l-b cor-0">Contato</h3>
-            <ul className="font-2-m cor-5">
-              <li>
-                <a href="tel:+5521999-9999">+55 21 9999-9999</a>
-              </li>
-              <li>
-                <a href="mailto:contato@bikecraft.com">contato@bikecraft.com</a>
-              </li>
-              <li>Rua Num Sei Onde, 4938</li>
-              <li>Rio de Janeiro - RJ</li>
-            </ul>
-
-            <div className="footer-redes">
-              <a href="">
-                <img src="./assets/img/redes/instagram.svg" alt="instagram" />
-              </a>
-
-              <a href="">
-                <img src="./assets/img/redes/facebook.svg" alt="facebook" />
-              </a>
-
-              <a href="">
-                <img src="./assets/img/redes/youtube.svg" alt="youtube" />
-              </a>
-            </div>
-          </div>
-          <div className="footer-informacoes">
-            <h3 className="font-2-l-b cor-0">Informações</h3>
-            <nav>
-              <ul className="font-1-m cor-5">
-                <li>
-                  <a href="./bicicletas.html">Bicicletas</a>
-                </li>
-                <li>
-                  <a href="./bicicletas.html">Seguros</a>
-                </li>
-                <li>
-                  <a href="./bicicletas.html">Contato</a>
-                </li>
-                <li>
-                  <a href="./termos.html">Termos e Condições</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <p className="footer-copy font-2-m cor-6">
-          Bikecraft, alguns direitos reservados.
-        </p>
-      </footer>
 
       {/* <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script> */}
