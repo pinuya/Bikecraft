@@ -1,4 +1,5 @@
 import { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 import { bikcraft, introducao } from "assets/img";
 import { useEffect } from "react";
 
@@ -27,9 +28,9 @@ export default function Index() {
               medida para o cliente. Explore o mundo na sua velocidade com a
               Bikcraft.
             </p>
-            <a className="botao" href="./bicicletas.html">
+            <Link className="botao" to="./bicicletas.html">
               Escolha a sua!
-            </a>
+            </Link>
           </div>
           <div>
             <img
@@ -49,36 +50,36 @@ export default function Index() {
         </h2>
         <ul>
           <li>
-            <a href="./bicicletas/magic.html">
+            <Link to="./bicicletas/magic.html">
               <img
                 src="./assets/img/bicicletas/magic-home.jpg"
                 alt="Bicicleta preta"
               />
               <h3 className="font-1-xl">Magic Night</h3>
               <span className="font-2-m">R$ 2.499,00</span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="./bicicletas/magic.html">
+            <Link to="./bicicletas/magic.html">
               <img
                 src="./assets/img/bicicletas/nimbus-home.jpg"
                 alt="Bicicleta preta"
               />
               <h3 className="font-1-xl">Nimbus Stark</h3>
               <span className="font-2-m">R$ 4.999,00</span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="./bicicletas/magic.html">
+            <Link to="./bicicletas/magic.html">
               <img
                 src="./assets/img/bicicletas/nebula-home.jpg"
                 alt="Bicicleta preta"
               />
               <h3 className="font-1-xl">Nebula Cosmic</h3>
               <span className="font-2-m">R$ 5.999,00</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </article>
@@ -97,9 +98,9 @@ export default function Index() {
               ergonomia na sua pedalada. Você pode também personalizar
               completamente as suas cores.
             </p>
-            <a className="link cor-5" href="biciletas.html">
+            <Link className="link cor-5" to="biciletas.html">
               Escolha um modelo
-            </a>
+            </Link>
 
             <div>
               <img
@@ -201,9 +202,9 @@ export default function Index() {
               <li>Suporte 08h às 18h.</li>
               <li>Cobertura estadual.</li>
             </ul>
-            <a className="botao secundario" href="./orcamento.html>">
+            <Link className="botao secundario" to="./orcamento.html>">
               Inscreva-se
-            </a>
+            </Link>
           </div>
 
           <div className="seguros-item">
@@ -218,9 +219,9 @@ export default function Index() {
               <li>Cobertura nacional.</li>
               <li>Acesso ao Clube Bikcraft.</li>
             </ul>
-            <a className="botao" href="./orcamento.html>">
+            <Link className="botao" to="./orcamento.html>">
               Inscreva-se
-            </a>
+            </Link>
           </div>
         </div>
       </article>

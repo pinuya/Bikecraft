@@ -6,20 +6,26 @@ export default function Layout() {
     <div>
       <header className="header-bg">
         <div className="container header">
-          <a href="./">
+          <Link to="./">
             {" "}
             <img src={bikcraft} alt="Bikcraft" />
-          </a>
+          </Link>
           <nav aria-label="primaria">
             <ul className="header-menu font-1-m">
               <li>
-                <Link to={"/bicicletas"}>Bicicletas</Link>
+                <Link prefetch="intent" to={"/bicicletas"}>
+                  Bicicletas
+                </Link>
               </li>
               <li>
-                <a href="./bicicletas.html">Seguros</a>
+                <Link prefetch="intent" to="/seguros">
+                  Seguros
+                </Link>
               </li>
               <li>
-                <a href="./bicicletas.html">Contato</a>
+                <Link prefetch="intent" to="/contato">
+                  Contato
+                </Link>
               </li>
             </ul>
           </nav>
@@ -36,27 +42,29 @@ export default function Layout() {
             <h3 className="font-2-l-b cor-0">Contato</h3>
             <ul className="font-2-m cor-5">
               <li>
-                <a href="tel:+5521999-9999">+55 21 9999-9999</a>
+                <Link to="tel:+5521999-9999">+55 21 9999-9999</Link>
               </li>
               <li>
-                <a href="mailto:contato@bikecraft.com">contato@bikecraft.com</a>
+                <Link to="mailto:contato@bikecraft.com">
+                  contato@bikecraft.com
+                </Link>
               </li>
               <li>Rua Num Sei Onde, 4938</li>
               <li>Rio de Janeiro - RJ</li>
             </ul>
 
             <div className="footer-redes">
-              <a href="">
+              <Link to="">
                 <img src="./assets/img/redes/instagram.svg" alt="instagram" />
-              </a>
+              </Link>
 
-              <a href="">
+              <Link to="">
                 <img src="./assets/img/redes/facebook.svg" alt="facebook" />
-              </a>
+              </Link>
 
-              <a href="">
+              <Link to="">
                 <img src="./assets/img/redes/youtube.svg" alt="youtube" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="footer-informacoes">
@@ -64,16 +72,24 @@ export default function Layout() {
             <nav>
               <ul className="font-1-m cor-5">
                 <li>
-                  <Link to={"/bicicletas"}>Bicicletas</Link>
+                  <Link prefetch="intent" to="/bicicletas">
+                    Bicicletas
+                  </Link>
                 </li>
                 <li>
-                  <Link to="./seguros">Seguros</Link>
+                  <Link prefetch="intent" to="./seguros">
+                    Seguros
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contato">Contato</Link>
+                  <Link prefetch="intent" to="/contato">
+                    Contato
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/termos">Termos e Condições</Link>
+                  <Link prefetch="intent" to="/termos">
+                    Termos e Condições
+                  </Link>
                 </li>
               </ul>
             </nav>

@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 export default function Bicicletas() {
   return (
     <div>
@@ -44,9 +46,9 @@ export default function Bicicletas() {
                 Rastreador
               </li>
             </ul>
-            <a className="botao seta" href="./bicicletas/nimbus.html">
+            <Link className="botao seta" to="./bicicletas/nimbus.html">
               Mais Sobre
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -84,9 +86,9 @@ export default function Bicicletas() {
                   Rastreador
                 </li>
               </ul>
-              <a className="botao seta" href="./bicicletas/magic.html">
+              <Link className="botao seta" to="./bicicletas/magic.html">
                 Mais Sobre
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -124,9 +126,9 @@ export default function Bicicletas() {
                 Rastreador
               </li>
             </ul>
-            <a className="botao seta" href="./bicicletas/nebula.html">
+            <Link className="botao seta" to="./bicicletas/nebula.html">
               Mais Sobre
-            </a>
+            </Link>
           </div>
         </div>
       </main>
