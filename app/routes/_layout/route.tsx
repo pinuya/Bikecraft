@@ -13,7 +13,7 @@ export default function Layout() {
           <nav aria-label="primaria">
             <ul className="header-menu font-1-m">
               <li>
-                <Link prefetch="intent" to={"/bicicletas"}>
+                <Link prefetch="intent" to="/bicicletas">
                   Bicicletas
                 </Link>
               </li>
