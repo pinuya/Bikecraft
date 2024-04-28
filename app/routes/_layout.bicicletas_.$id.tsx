@@ -70,7 +70,7 @@ export const loader = (args: LoaderFunctionArgs) => {
 
 export default function DetailsBike() {
   const { bike } = useLoaderData<typeof loader>();
-  console.log(bike);
+
   return (
     <div>
       <main className="titulo-bg">
