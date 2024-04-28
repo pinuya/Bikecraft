@@ -11,6 +11,9 @@ import magicHome from "./bicicletas/magic-home.jpg"
 import nebula from "./bicicletas/nebula.jpg"
 import nebulaHome from "./bicicletas/nebula-home.jpg"
 
+import github from "./redes/github.svg"
+import linkedin from "./redes/linkedin.svg"
+
 const coverBike = {
     nimbus,
     magic,
@@ -27,4 +30,4 @@ const bikeDetailsIcons = {
     carbon
 }
 
-export { bikcraft, introducao, bikeDetailsIcons, coverBike }
+export { bikcraft, introducao, github, linkedin, bikeDetailsIcons, coverBike }

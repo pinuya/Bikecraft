@@ -1,5 +1,5 @@
 import { Link, Outlet } from "@remix-run/react";
-import { bikcraft } from "assets/img";
+import { bikcraft, github, linkedin } from "assets/img";
 
 export default function Layout() {
   return (
@@ -42,11 +42,11 @@ export default function Layout() {
             <h3 className="font-2-l-b cor-0">Contato</h3>
             <ul className="font-2-m cor-5">
               <li>
-                <Link to="tel:+5521999-9999">+55 21 9999-9999</Link>
+                <Link to="https://twitter.com/pinuyadev">@pinuyadev</Link>
               </li>
               <li>
-                <Link to="mailto:contato@bikecraft.com">
-                  contato@bikecraft.com
+                <Link to="mailto:pinuyadeveloper@gmail.com">
+                  pinuyadeveloper@gmail.com
                 </Link>
               </li>
               <li>Rua Num Sei Onde, 4938</li>
@@ -58,12 +58,12 @@ export default function Layout() {
                 <img src="../assets/img/redes/instagram.svg" alt="instagram" />
               </Link>
 
-              <Link to="">
-                <img src="../assets/img/redes/facebook.svg" alt="facebook" />
+              <Link to="https://github.com/pinuya">
+                <img src={github} alt="github" />
               </Link>
 
-              <Link to="">
-                <img src="../assets/img/redes/youtube.svg" alt="youtube" />
+              <Link to="https://www.linkedin.com/in/tifanyanunes/">
+                <img src={linkedin} alt="linkedin" />
               </Link>
             </div>
           </div>
