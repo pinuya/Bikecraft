@@ -1,7 +1,6 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { bikcraft, bikeDetailsIcons, introducao } from "assets/img";
-import { useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [

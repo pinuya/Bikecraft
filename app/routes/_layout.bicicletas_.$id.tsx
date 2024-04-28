@@ -1,63 +1,11 @@
 import { LoaderFunctionArgs } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { bikeDetailsIcons } from "assets/img";
+import { findBikeById } from "~/db";
 
 export const loader = (args: LoaderFunctionArgs) => {
   const id = args.params.id;
 
-  const infos = [
-    {
-      title: "Motor Elétrico",
-      icon: bikeDetailsIcons.engine,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      title: "50 km/h",
-      icon: bikeDetailsIcons.speed,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      title: "Rastreador",
-      icon: bikeDetailsIcons.tacker,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      title: "Fibra de Carbono",
-      icon: bikeDetailsIcons.carbon,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-  ];
-
-  const dataSheet = [
-    { title: "Peso", description: "9 kg" },
-    { title: "Altura", description: "60 cm" },
-    { title: "Largura", description: "120 cm" },
-    { title: "Profundidade", description: "10 cm" },
-    { title: "Marchas", description: "16" },
-    { title: "Roda", description: "29" },
-  ];
-
-  const bikes = [
-    {
-      id: 1,
-      name: "Nimbus",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Natus ipsam tempora consequatur tempore consectetur quis ut facere vero.
-         Esse ea minima perferendis facere quibusdam voluptatem velit modi similique quis illum.`,
-      price: 4999,
-      stock: 15,
-      deadline: 7,
-      infos,
-      dataSheet,
-      gallery: [""],
-    },
-  ];
-
-  const foundBike = bikes.find((bike) => bike.id === Number(id));
+  const foundBike = findBikeById(id);
 
   if (!foundBike) {
     throw new Error("Not Found");
@@ -91,9 +39,9 @@ export default function DetailsBike() {
 
         <div className="bicicleta container">
           <div className="bicicleta-imagens">
-            <img src="../assets/img/bicicleta/nimbus1.jpg" alt="" />
-            <img src="../assets/img/bicicleta/nimbus2.jpg" alt="" />
-            <img src="../assets/img/bicicleta/nimbus3.jpg" alt="" />
+            {bike.gallery.map((picture) => {
+              return <img src={picture} alt="" />;
+            })}
           </div>
 
           <div className="bicicleta-conteudo">
