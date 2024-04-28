@@ -1,8 +1,10 @@
-import { Link } from "@remix-run/react";
+import { Link, Outlet } from "@remix-run/react";
+import { bikeDetailsIcons } from "assets/img";
 
 export default function Bicicletas() {
   return (
     <div>
+      <Outlet />
       <main>
         <div className="titulo-bg">
           <div className="titulo container">
@@ -30,23 +32,23 @@ export default function Bicicletas() {
             </p>
             <ul className="font-1-m cor-8">
               <li>
-                <img src="./assets/img/icones/eletrica.svg" alt="" />
+                <img src={bikeDetailsIcons.engine} alt="Icon Engine" />
                 Motor Elétrico
               </li>
               <li>
-                <img src="./assets/img/icones/carbono.svg" alt="" />
+                <img src={bikeDetailsIcons.carbon} alt="Icon Carbon" />
                 Fibra de Carbono
               </li>
               <li>
-                <img src="./assets/img/icones/velocidade.svg" alt="" />
+                <img src={bikeDetailsIcons.speed} alt="Icon Speed" />
                 50 km/h
               </li>
               <li>
-                <img src="./assets/img/icones/rastreador.svg" alt="" />
+                <img src={bikeDetailsIcons.tacker} alt="Icon Tracker" />
                 Rastreador
               </li>
             </ul>
-            <Link className="botao seta" to="./bicicletas/nimbus.html">
+            <Link className="botao seta" to="1">
               Mais Sobre
             </Link>
           </div>
@@ -74,7 +76,7 @@ export default function Bicicletas() {
                   Motor Elétrico
                 </li>
                 <li>
-                  <img src="./assets/img/icones/carbono.svg" alt="" />
+                  <img src="../../assets/img/icones/carbono.svg" alt="" />
                   Fibra de Carbono
                 </li>
                 <li>

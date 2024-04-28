@@ -1,6 +1,6 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import { bikcraft, introducao } from "assets/img";
+import { bikcraft, bikeDetailsIcons, introducao } from "assets/img";
 import { useEffect } from "react";
 
 export const meta: MetaFunction = () => {
@@ -104,7 +104,7 @@ export default function Index() {
 
             <div>
               <img
-                src="./assets/img/icones/eletrica.svg"
+                src={bikeDetailsIcons.engine}
                 alt="ícone de bicicleta elétrica"
               />
               <h3 className="font-1-m cor-0">Motor elétrico</h3>
@@ -117,7 +117,7 @@ export default function Index() {
             <div className="tecnologia-vantagens">
               <div>
                 <img
-                  src="./assets/img/icones/rastreador.svg"
+                  src={bikeDetailsIcons.tacker}
                   alt="ícone de bicicleta elétrica"
                 />
                 <h3 className="font-1-m cor-0">Rastreador</h3>
@@ -225,9 +225,6 @@ export default function Index() {
           </div>
         </div>
       </article>
-
-      {/* <script src="./js/plugins/simple-anime.js"></script>
-    <script src="./js/script.js"></script> */}
     </div>
   );
 }

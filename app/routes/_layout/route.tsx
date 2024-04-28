@@ -36,7 +36,7 @@ export default function Layout() {
 
       <footer className="footer-bg">
         <div className="footer container">
-          <img src="./assets/img/bikcraft.svg" alt="logo Bikecraft" />
+          <img src="../assets/img/bikcraft.svg" alt="logo Bikecraft" />
 
           <div className="footer-contato">
             <h3 className="font-2-l-b cor-0">Contato</h3>
@@ -55,15 +55,15 @@ export default function Layout() {
 
             <div className="footer-redes">
               <Link to="">
-                <img src="./assets/img/redes/instagram.svg" alt="instagram" />
+                <img src="../assets/img/redes/instagram.svg" alt="instagram" />
               </Link>
 
               <Link to="">
-                <img src="./assets/img/redes/facebook.svg" alt="facebook" />
+                <img src="../assets/img/redes/facebook.svg" alt="facebook" />
               </Link>
 
               <Link to="">
-                <img src="./assets/img/redes/youtube.svg" alt="youtube" />
+                <img src="../assets/img/redes/youtube.svg" alt="youtube" />
               </Link>
             </div>
           </div>
