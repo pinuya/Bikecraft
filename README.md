@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/pinuya/Bikecraft?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/pinuya/Bikecraft?style=for-the-badge)
 
-<img src="/assets/bikcraft.png" alt="Login do Site"/>
+<img src="/assets/img/bikcraft.png" alt="Login do Site"/>
 
 > Projeto Bikcraft, utilizei o template do curso UI/UX do Origamid, é um projeto OpenSource, onde irei utilizar para aperfeiçoar minhas habilidades em componentização de itens e estudar sobre estrutura MVC resolvi desenvolve-lo utilizando as linguagens TypeScript/CSS e usei como framework principal o Remix, para o deploy, irei fazer na Vercel.
 
